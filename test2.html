@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">
+Fill out the details
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter your name: <input id="name" type="text" placeholder="Enter your name" required/></label></fieldset>
+      <fieldset>
+          <label id="email-label"> Enter your email: <input id="email" type="email" placeholder="Email" required/></label>
+          </fieldset>
+      <fieldset>
+    <label id="number-label"> Enter your age:<input id="number" type="number" min="18" max="32" placeholder="age" required/> </label>
+      </fieldset>
+      <fieldset>
+        <label> Why do you want to learn music theory
+          <select id="dropdown" name="dropdown">
+            <option value=""> select one </label>
+            <option  value="1"> I am just intersted in it </option>
+            <option  value="2"> I want to make career in this </option>
+            <option  value="3"> Nothing serious</option>
+          </select>
+      </fieldset>
+      <fieldset>
+        <label for="personal-account">Personal account<input id="personal-account" type="radio" name="account-type" value="personal-account"
+        class="inline" required/>
+        <label for="business-account"> Business Account<input id="business-account" type="radio" name="account-type" value="business-account" class="inline" required/>
+        </label>
+        </fieldset>
+        <fieldset>
+          <label>Select the genre you are interested in :</label>
+        <label for="pop"> Pop</label>
+          <input id="pop" type="checkbox" name="pop" value="pop" />
+          <label for="Jazz"> Jazz</label>
+          <input id="Jazz" type="checkbox" name="Jazz" value="Jazz" />
+          <label for="Indie"> Indie</label>
+          <input id=" Indie" type="checkbox" name=" Indie" value="Indie" />
+           <label for="Rock">Rock</label>
+          <input id=" Rock" type="checkbox" name=" Rock" value="Rock" />
+          <label for="Others">Others</label>
+          <input id=" Others" type="checkbox" name="Others" value="Others" />
+          </fieldset>
+          <fieldset>
+          <label for="bio"> Tell us more about your-self : 
+            <textarea id="bio" name="bio" placeholder="I love to listen music" ></textarea>
+             <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
